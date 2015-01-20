@@ -1,5 +1,5 @@
 yarfe:
-  image: glenbot/yarfe
+  image: glenbot/yarfe-docker
   command: sh -c "python -m yarfe.bin.server --address=0.0.0.0 --path=/data"
   ports:
     - "9000:9000"

@@ -4,13 +4,37 @@ Example for presentation purposes on how to deploy python applications using doc
 
 ## Development
 
-* Start a virtual machine somewhere. This example assumes Digital Ocean.
+* Start a virtual machine somewhere using Ubuntu 14.04 64-bit. This example assumes Digital Ocean.
 * SSH into the machine
-* Follow the steps below to bootstrap a development environment
+* Follow the steps below to bootstrap a development environment. The steps assume you have root privileges. In your HOME folder:
 
-Unfinished
+```bash
+$ apt-get update
+$ apt-get install git
+$ apt-get install python-setuptools
+$ easy_install pip
+$ pip install fig
+$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+$ git clone https://github.com/glenbot/yarfe-docker.git
+$ cd yarfe-docker
+$ fig build
+$ fig up -d
+```
 
 ## Production
 
-N/A yet
+* Start a virtual machine somewhere using Ubuntu 14.04 64-bit. This example assumes Digital Ocean.
+* SSH into the machine
+* Follow the steps below to bootstrap a production environment. The steps assume you have root privileges. In your HOME folder:
 
+```bash
+$ apt-get update
+$ apt-get install git
+$ apt-get install python-setuptools
+$ easy_install pip
+$ pip install fig
+$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+$ git clone https://github.com/glenbot/yarfe-docker.git
+$ ln -s yarfe-docker/fig_production.yml fig.yml
+$ fig up -d
+```
