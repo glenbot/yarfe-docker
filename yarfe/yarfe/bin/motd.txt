@@ -1,0 +1,19 @@
+          _______  _______  _______  _______ 
+|\     /|(  ___  )(  ____ )(  ____ \(  ____ \
+( \   / )| (   ) || (    )|| (    \/| (    \/
+ \ (_) / | (___) || (____)|| (__    | (__    
+  \   /  |  ___  ||     __)|  __)   |  __)   
+   ) (   | (   ) || (\ (   | (      | (      
+   | |   | )   ( || ) \ \__| )      | (____/\
+   \_/   |/     \||/   \__/|/       (_______/
+
+Welcome to Yet Another Remote File Explorer.
+Below are some usless commands to get your
+journey started.
+
+COMMANDS:
+
+HELP - Show list of commands
+MOTD - Show the message of the day
+LIST - List directory contents
+CAT  - Show file contents

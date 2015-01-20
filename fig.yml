@@ -1,0 +1,7 @@
+yarfe:
+  build: .
+  command: sh -c "python -m yarfe.bin.server --address=0.0.0.0 --path=/data"
+  ports:
+    - "2575:2575"
+  volumes:
+    - /tmp:/data
