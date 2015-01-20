@@ -2,6 +2,6 @@ yarfe:
   image: glenbot/yarfe
   command: sh -c "python -m yarfe.bin.server --address=0.0.0.0 --path=/data"
   ports:
-    - "2575:2575"
+    - "9000:9000"
   volumes:
     - /tmp:/data
