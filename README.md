@@ -21,6 +21,15 @@ $ fig build
 $ fig up -d
 ```
 
+# Building image for production
+
+```bash
+$ cd yarfe-docker
+$ docker login
+$ docker build -t "<yourusername>/yarfe-docker"
+$ docker push "<yourusername>/yarfe-docker"
+```
+
 ## Production
 
 * Start a virtual machine somewhere using Ubuntu 14.04 64-bit. This example assumes Digital Ocean.
@@ -36,5 +45,6 @@ $ pip install fig
 $ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 $ git clone https://github.com/glenbot/yarfe-docker.git
 $ ln -s yarfe-docker/fig_production.yml fig.yml
+$ docker login
 $ fig up -d
 ```
